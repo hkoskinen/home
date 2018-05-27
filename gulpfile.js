@@ -7,6 +7,7 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const del = require('del');
+const uglify = require('gulp-uglify');
 
 const src = 'src';
 const dist = 'dist';
@@ -50,6 +51,7 @@ gulp.task('html', ['clean:dist'], () => {
       autoprefixer({ browsers: ['last 2 version']}),
       cssnano()
     ])))
+    .pipe(gulpif('*.js', uglify()))
     .pipe(gulp.dest(`${dist}`));
 });
 
