@@ -1,0 +1,14 @@
+.page-navigation {
+  border: 1px solid red;
+  display: flex;
+
+  nav {
+    display: flex;
+  }
+
+  ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+  }
+}
