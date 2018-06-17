@@ -25,8 +25,10 @@
 <body>
   <div class="page">
     <div class="page-navigation">
+
       <nav>
-        <a href="#">logo</a>
+        <a href="#" id="open-nav"><i class="fas fa-bars"></i></a>
+        <!-- <i class="fas fa-times"></i> when open -->
         <ul>
           <li><a href="#about">about</a></li>
           <li><a href="#skills">skills</a></li>
@@ -37,8 +39,11 @@
     </div>
     <header class="page-header">
       <div>
-        <h1>Henri Koskinen</h1>
-        <p>web developer</p>
+        <a href="#"><img src="images/initials_logo.png" alt=""></a>
+        <div>
+          <h1>Henri Koskinen</h1>
+          <p>web developer</p>
+        </div>
       </div>
     </header>
     <section id="about">
@@ -68,13 +73,34 @@
     <footer class="page-footer">
       <nav>
         <ul>
-          <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-          <li><a href=""><i class="fab fa-github"></i></a></li>
-          <li><a href=""><i class="fab fa-twitter"></i></a></li>
-          <li><a href=""><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://"><i class="fab fa-instagram"></i></a></li>
         </ul>
       </nav>
     </footer>
   </div>
+
+  <script>
+    (function() {
+      'use strict';
+
+      function openNav(e) {
+        e.preventDefault();
+        const ul = document.querySelector('.page-navigation ul');
+        console.log('asd');
+        if (ul.style.display === 'none')
+          ul.style.display = 'block';
+        else {
+          ul.style.display = 'none';
+        }
+      }
+
+      const barBtn = document.querySelector('#open-nav');
+      barBtn.addEventListener('click', openNav);
+
+    }());
+  </script>
 </body>
 </html>

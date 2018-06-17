@@ -4,8 +4,9 @@
   background-size: cover;
   height: 100vh;
 
-  div {
+  >div {
     margin: auto;
+    display: flex;
 
     h1 {
       color: #fff;

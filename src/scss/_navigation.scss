@@ -1,6 +1,6 @@
 .page-navigation {
   background-color: rgba(0,0,0,0.2);
-  position: relative;
+  position: fixed;
   width: 100%;
   top: 0;
   font-family: $nav-link-font;
@@ -12,6 +12,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    >a {
+      font-size: 2rem;
+    }
   }
 
   ul {
@@ -34,4 +38,12 @@
     text-align: right;
     padding: 0.5em;
   }
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
