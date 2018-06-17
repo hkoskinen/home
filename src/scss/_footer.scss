@@ -1,0 +1,22 @@
+.page-footer {
+
+  background: $footer-background-color;
+  color: #fff;
+  padding: 2em 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #fff;
+  }
+
+}
