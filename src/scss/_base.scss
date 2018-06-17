@@ -11,6 +11,8 @@ html {
 p {
   color: $body-color;
   font-family: $body-font;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 h1,
@@ -21,6 +23,16 @@ h5,
 h6 {
   color: $heading-color;
   font-family: $heading-font;
+  font-weight: 100;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.8em;
+}
+h3 {
+  font-size: 2em;
 }
 
 .container {
