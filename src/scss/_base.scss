@@ -8,6 +8,21 @@ html {
   box-sizing: inherit;
 }
 
+p {
+  color: $body-color;
+  font-family: $body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+  font-family: $heading-font;
+}
+
 .container {
   padding: 0 1em;
 }
