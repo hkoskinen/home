@@ -1,22 +1,28 @@
 .page-footer {
-
   background: $footer-background-color;
   color: #fff;
   padding: 2em 0;
-
-  ul {
+  .social-links {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: space-between;
     width: 150px;
     margin: 0 auto;
+    a {
+      text-decoration: none;
+      font-size: 1.5em;
+      color: #888;
+      transition: color 0.2s ease-out;
+      &:hover {
+        color: rgb(143, 163, 41);
+      }
+    }
   }
+}
 
-  a {
-    text-decoration: none;
-    font-size: 1.5em;
-    color: #fff;
-  }
-
+.copyright {
+  color: #666;
+  text-align: center;
+  font-size: 0.8rem;
 }
