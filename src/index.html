@@ -34,7 +34,7 @@
           <i class="fas fa-bars"></i>
         </a>
         <!-- <i class="fas fa-times"></i> when open -->
-        <ul>
+        <ul class="hide">
           <li>
             <a href="#about">about</a>
           </li>
@@ -52,44 +52,58 @@
     </div>
     <header class="page-header">
       <div>
-        <a href="#">
-          <img src="images/initials_logo.png" alt="">
-        </a>
-        <div>
-          <h1>Henri Koskinen</h1>
-          <p>web developer</p>
-        </div>
+        <h1>Henri Koskinen</h1>
+        <p>web developer | lifter | reader | gamer | introvert</p>
       </div>
     </header>
     <section id="about">
-      <div class="container">
-        <h2>about</h2>
+      <div class="section container">
+        <h2 class="section__title">about</h2>
         <p>These things happen automatically. All you have to do is just let them happen. I thought today we would do a happy
           little picture. It's beautiful - and we haven't even done anything to it yet. That's a son of a gun of a cloud.
           It's cold, but it's beautiful.</p>
+        <p>A fan brush is a fantastic piece of equipment. Use it. Make friends with it. I can't think of anything more rewarding
+          than being able to express yourself to others through painting. It's amazing what you can do with a little love
+          in your heart.</p>
       </div>
     </section>
     <section id="skills">
-      <div class="container">
-        <h2>skills</h2>
+      <div class="section container">
+        <h2 class="section__title">skills</h2>
         <p>Let's put some happy little bushes on the other side now. That's what painting is all about. It should make you feel
           good when you paint. We wash our brush with odorless thinner. Talk to trees, look at the birds. Whatever it takes.</p>
+        <ul class="section__skills">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>SQL</li>
+          <li>React</li>
+          <li>Angular</li>
+        </ul>
       </div>
     </section>
     <section id="projects">
-      <div class="container">
-        <h2>projects</h2>
+      <div class="section container">
+        <h2 class="section__title">projects</h2>
         <p>A fan brush is a fantastic piece of equipment. Use it. Make friends with it. I can't think of anything more rewarding
           than being able to express yourself to others through painting. It's amazing what you can do with a little love
           in your heart.</p>
       </div>
     </section>
     <section id="contact">
-      <div class="container">
-        <h2>contact</h2>
+      <div class="section container">
+        <h2 class="section__title">contact</h2>
         <p>Of course he's a happy little stone, cause we don't have any other kind. Every highlight needs it's own personal
           shadow. Little trees and bushes grow however makes them happy. In your world you have total and absolute power.
           We must be quiet, soft and gentle. Life is too short to be alone, too precious. Share it with a friend.</p>
+
+        <form class="contact__form">
+          <input type="text" placeholder="Subject">
+          <input type="text" placeholder="Email">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Hello World!"></textarea>
+          <button type="submit">send</button>
+        </form>
       </div>
     </section>
     <footer class="page-footer">
@@ -114,6 +128,11 @@
           <li>
             <a href="https://">
               <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://">
+              <i class="fab fa-telegram"></i>
             </a>
           </li>
         </ul>

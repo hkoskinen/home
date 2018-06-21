@@ -3,15 +3,14 @@
   background: url(../images/niilo-isotalo-379496-unsplash_small.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
-
   >div {
     margin: auto;
-    display: flex;
-
+    text-align: center;
     h1 {
-      color: #fff;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.7);
+      letter-spacing: 1px;
     }
-
     p {
       color: #fff;
     }
