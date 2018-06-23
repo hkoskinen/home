@@ -7,6 +7,11 @@
   padding: 0.8rem 1rem;
   border-radius: 0.3rem;
   transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  &--email {
+    margin-top: 1rem;
+  }
   &:hover {
     cursor: pointer;
     background: rgba(255, 255, 255, 0.1);
