@@ -1,5 +1,5 @@
 .page-navigation {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   top: 0;
@@ -7,6 +7,13 @@
   font-weight: 100;
   letter-spacing: 2px;
   font-size: 0.9em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    height: 70px;
+    padding: 0.8rem;
+  }
   nav {
     display: flex;
     flex-direction: column;
@@ -23,20 +30,13 @@
   }
   li {
     margin: 0.5em 0;
-  }
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    width: 100%;
-    display: block;
-    text-align: right;
-    padding: 0.5em;
-  }
-  .show {
-    display: block;
-  }
-  .hide {
-    display: none;
+    &:a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      width: 100%;
+      text-align: right;
+      padding: 0.5em;
+    }
   }
 }
