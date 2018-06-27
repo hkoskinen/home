@@ -27,13 +27,15 @@
 
 <body>
   <div class="page">
+
+
     <div class="page-navigation">
-      <a href="#">
+      <!--<a href="#">
         <img src="images/initials_logo.png" alt="">
-      </a>
+      </a>-->
       <nav>
         <a href="#" id="open-nav">
-          <i class="fas fa-bars"></i>
+          menu <i class="fas fa-bars"></i>
         </a>
         <ul>
           <li>
@@ -51,6 +53,8 @@
         </ul>
       </nav>
     </div>
+
+
     <header class="page-header">
       <div>
         <h1>Henri Koskinen</h1>
@@ -139,28 +143,6 @@
       </p>
     </footer>
   </div>
-
-  <script>
-    (function () {
-      'use strict';
-
-      function openNav(e) {
-        e.preventDefault();
-        const ul = document.querySelector('.page-navigation ul');
-        console.log('asd');
-        if (ul.style.display === 'none')
-          ul.style.display = 'block';
-        else {
-          ul.style.display = 'none';
-        }
-      }
-
-      const barBtn = document.querySelector('#open-nav');
-      barBtn.addEventListener('click', openNav);
-
-    }());
-
-  </script>
 </body>
 
 </html>
