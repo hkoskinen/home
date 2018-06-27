@@ -38,3 +38,8 @@ h3 {
 .container {
   padding: 0 1em;
 }
+
+::selection {
+  background: #1a262e;
+  color: #fff;
+}
