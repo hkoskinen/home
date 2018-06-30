@@ -27,3 +27,37 @@
   max-width: $max-width;
   margin: 0 auto;
 }
+
+
+.projects-container {
+
+}
+
+.project-items {
+  display: flex;
+}
+.project-item {
+  border: 1px solid lightseagreen;
+  flex: 1;
+
+  h3 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+.project-item-links {
+  list-style: none;
+  padding: 0;
+  border: 1px solid lightgrey;
+  li {
+    border: 1px solid lightgrey;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .project-items{
+    flex-direction: column;
+  }
+}
