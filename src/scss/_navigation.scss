@@ -52,7 +52,7 @@
       display: none;
     }
     ul {
-      width: 500px;
+      width: $max-width;
       margin: auto;
       display: flex;
       flex-direction: row;
